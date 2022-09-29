@@ -111,4 +111,8 @@ public static WebDriver driver;
 	public void browserQuit() {
 		driver.quit();
 	}
+	
+	public void browserCloae() {
+		driver.close();
+	}
 }
