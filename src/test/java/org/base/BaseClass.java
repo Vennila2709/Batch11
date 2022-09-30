@@ -114,5 +114,18 @@ public static WebDriver driver;
 	
 	public void browserCloae() {
 		driver.close();
+		
+	}
+	
+	public boolean isDisplayed1(WebElement e) {
+		boolean flag=false;
+		try {
+			e.isDisplayed();
+			flag=true;
+		} catch (Exception e2) {
+			flag=false;
+			return flag;
+		}
+		return flag;
 	}
 }
